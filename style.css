@@ -1,0 +1,391 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 
+    'Lucida Sans', Arial, sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: auto; 
+    width: 100%;
+}
+
+nav {
+    height:80px;
+    background: #fdcc04;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem calc((100vw-1300px)/2);
+
+}
+
+.logo{
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0 2rem;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 0 1.5rem;
+
+}
+
+.hero{
+    background: #fdcc04;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 85vh;
+    padding: 3rem calc((100vw-1300px)/2);
+
+}
+
+.column-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    padding: 0rem 2rem;
+    flex: 1;
+}
+
+.text-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: black;
+    padding: 0rem 2rem ;
+    flex: 1;
+}
+
+.column-left h1{
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.column-left p{
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.hero button {
+    width: auto;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    border: none;
+    color: #fdcc04;
+    background: black;
+    cursor: pointer;
+}
+
+.table button {
+    width: auto;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    border: none;
+    color: #fdcc04;
+    background: black;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background: white;
+    color: black;
+}
+
+.table button:hover {
+    background: white;
+    color: black;
+}
+
+.column-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 2rem;
+}
+
+
+.table {
+    
+    background: black;
+    color: white;
+    font-size: 2rem;
+    padding: 80px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.table button a {
+    width: auto;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    border: none;
+    color: #fdcc04;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+
+.hero button a {
+    width: auto;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    border: none;
+    color: #fdcc04;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+
+@media screen and (max-width: 768px ) {
+    .hero-container {
+        grid-template-columns: 1fr;
+        
+    }
+}
+
+/*About Me*/
+
+.bio {
+    background: #fdcc04;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 85vh;
+    padding: 3rem calc((100vw-1300px)/2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: black;
+    padding: 0rem 2rem ;
+    flex: 1;
+}
+
+.bio h1{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.bio p{
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.resume {
+    background: #fdcc04;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 130vh;
+    padding: 3rem calc((100vw-1300px)/2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    padding: 0rem 2rem ;
+    flex: 1;
+
+}
+
+.pdf {
+    background: #fdcc04;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: black;
+    padding: 0rem 2rem ;
+    flex: 1;
+    border: none;
+}
+
+.resume h1{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+/*Contact*/
+
+.table2 button a img {
+    border: none;
+    justify-content: right;
+    align-items: right;
+    outline: none;
+    background-color: white;
+}
+
+a img {
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none; 
+}
+
+.contact {
+    background: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 35vh;
+    padding: 3rem calc((100vw-1300px)/2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    padding: 0rem 2rem ;
+    flex: 1;
+    width: auto;
+}
+
+.contact h1{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.table2 {
+    background: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 35vh;
+    padding: 3rem calc((100vw-1300px)/2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    padding: 0rem 2rem ;
+    flex: 1;
+    width: auto;
+
+}
+
+table {
+    table-layout: auto;
+}
+
+.table2 table tr th{
+    font-size: 2.5rem;
+    width: 33%;
+    padding: 0 80px;
+    text-align: center;
+}
+
+.table2 table tr td{
+    width: 33%;
+    padding: 0 80px;
+    font-size: 1rem;
+    color: black;
+    font-style: none;
+    text-decoration: none;
+    text-align: center;
+}
+td a {
+    text-decoration: none;
+    color: black;
+}
+
+
+footer {
+    background: black;
+    color: white;
+    padding: 25px;
+    align-items: column;
+}
+
+footer p a {
+    color: white;
+}
+
+/*Projects*/
+
+.projects {
+    background: #fdcc04;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+    padding: 3rem calc((100vw-1300px)/2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    padding: 0rem 2rem ;
+    flex: 1;
+}
+
+.projects h1{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    margin-left: 20px;
+}
+
+.projects p{
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.projects button a {
+    width: auto;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    border: none;
+    color: #fdcc04;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+
+.projects button {
+    width: auto;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    border: none;
+    color: #fdcc04;
+    background: black;
+    cursor: pointer;
+}
+
+.projects button:hover {
+    background: white;
+    color: black;
+}
+
+.projects img {
+    max-width: 30%;
+    height: auto;
+}
+
+.projects header {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    margin-left: 20px;
+    font-style: bold;
+}
