@@ -1,335 +1,293 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 
     'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    list-style: none;
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    overflow-x: auto; 
+body {
+    background-color: #fdcc04;
+
+}
+
+header {
+    background-color: #111;
     width: 100%;
+    height: 100px;
 }
 
-nav {
-    height:80px;
-    background: #fdcc04;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0rem calc((100vw-1300px)/2);
-
-}
-
-.logo{
-    color: black;
-    font-size: 1.5rem;
+header .header-brand {
+    font-size: 24px;
+    font-style: italic;   
     font-weight: bold;
-    font-style: italic;
-    padding: 0 2rem;
-
-}
-
-nav a {
-    text-decoration: none;
-    color: black;
-    padding: 0 1.5rem;
-
-}
-
-.hero{
-    background: #fdcc04;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 85vh;
-    padding: 3rem calc((100vw-1300px)/2);
-
-}
-
-.column-left {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: black;
-    padding: 0rem 2rem;
-    flex: 1;
-}
-
-.text-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    color: black;
-    padding: 0rem 2rem ;
-    flex: 1;
-}
-
-.column-left h1{
-    margin-bottom: 1rem;
-    font-size: 3rem;
-}
-
-.column-left p{
-    margin-bottom: 2rem;
-    font-size: 1.5rem;
-    line-height: 1.5;
-}
-
-.hero button {
-    width: auto;
-    padding: 1rem 3rem;
-    font-size: 1rem;
-    border: none;
     color: #fdcc04;
-    background: black;
-    cursor: pointer;
+    text-transform: uppercase;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
 }
 
-.table button {
-    width: auto;
-    padding: 1rem 3rem;
-    font-size: 1rem;
-    border: none;
-    color: #fdcc04;
-    background: black;
-    cursor: pointer;
+header nav ul {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
 }
 
-.hero button:hover {
-    background: white;
-    color: black;
+header nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 0 20px;
+   
 }
 
-.table button:hover {
-    background: white;
-    color: black;
+header nav ul li a{
+    font-size: 16px;
+    color: #ffffff;
+
 }
 
-.column-right {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0rem 2rem;
-}
-
-
-.table {
-    
-    background: black;
-    color: white;
-    font-size: 2rem;
-    padding: 80px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
-
-.table button a {
-    width: auto;
-    padding: 1rem 3rem;
-    font-size: 1rem;
-    border: none;
-    color: #fdcc04;
-    cursor: pointer;
-    text-decoration: none;
-    
-}
-
-.hero button a {
-    width: auto;
-    padding: 1rem 3rem;
-    font-size: 1rem;
-    border: none;
-    color: #fdcc04;
-    cursor: pointer;
-    text-decoration: none;
-    
-}
-
-@media screen and (max-width: 768px ) {
-    .hero-container {
-        grid-template-columns: 1fr;
+@media only screen and (min-width: 1000px) {
+    header .header-brand {
+        margin: 31px 0;
+        text-align: left;
+        padding: 0px 20px 0px 40px;
+        line-height: 38px;
+        float: left;
+    }
+    header nav ul {
+        margin: 20px 0px 0px 20px;
+        float: left;
         
+    }
+    
+    header nav ul li a{
+        line-height: 60px;
     }
 }
 
-/*About Me*/
+/*index*/
 
-.bio {
-    background: #fdcc04;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 85vh;
-    padding: 3rem calc((100vw-1300px)/2);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    color: black;
-    padding: 0rem 2rem ;
-    flex: 1;
+.index-banner {
+    width: 100%;
+    height: calc(100vh-100px);
+    display: table;
+
 }
 
-.bio h1{
-    margin-bottom: 1rem;
+.vertical-center {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.index-banner h2 {
+    margin-top: 70px;
+    font-weight: lighter;
+    text-align: left;
+    padding: 5px 20px;
+    font-size: 2rem;
+}
+
+.index-banner h1 {
+    font-weight: bolder;
+    font-size: 3rem;
+    text-align: left;
+    padding: 5px 20px;
+}
+
+.index-banner p {
+    text-align: left;
     font-size: 1.5rem;
+    padding: 5px 20px;
 }
 
-.bio p{
-    margin-bottom: 2rem;
-    font-size: 0.9rem;
-    line-height: 1.5;
-}
-
-.resume {
-    background: #fdcc04;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 130vh;
-    padding: 3rem calc((100vw-1300px)/2);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    padding: 0rem 2rem ;
-    flex: 1;
-
-}
-
-.pdf {
-    background: #fdcc04;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 100%;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    color: black;
-    padding: 0rem 2rem ;
-    flex: 1;
-    border: none;
-}
-
-.resume h1{
-    margin-bottom: 1rem;
-    font-size: 2rem;
-}
-
-/*Contact*/
-
-.table2 button a img {
-    border: none;
-    justify-content: right;
-    align-items: right;
-    outline: none;
-    background-color: white;
-}
-
-a img {
-    border: none;
-    outline: none;
-    text-decoration: none;
-}
-
-button {
-    border: none;
-    outline: none;
-    text-decoration: none;
-}
-
-a {
-    text-decoration: none; 
-}
-
-.contact {
-    background: #ffffff;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 35vh;
-    padding: 3rem calc((100vw-1300px)/2);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    padding: 0rem 2rem ;
-    flex: 1;
+.index-banner button {
     width: auto;
-}
-
-.contact h1{
-    margin-bottom: 1rem;
-    font-size: 2rem;
-    text-align: center;
-}
-
-.table2 {
-    background: #ffffff;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 35vh;
-    padding: 3rem calc((100vw-1300px)/2);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    padding: 0rem 2rem ;
-    flex: 1;
-    width: auto;
-
-}
-
-table {
-    table-layout: auto;
-}
-
-.table2 table tr th{
-    font-size: 2.5rem;
-    width: 33%;
-    padding: 0 80px;
-    text-align: center;
-}
-
-.table2 table tr td{
-    width: 33%;
-    padding: 0 80px;
+    padding: 1rem 3rem;
     font-size: 1rem;
-    color: black;
-    font-style: none;
+    border: none;
+    color: #fdcc04;
+    background: black;
+    cursor: pointer;
     text-decoration: none;
-    text-align: center;
+    border-radius: 15px;
+    margin: 25px 20px;
 }
-td a {
-    text-decoration: none;
+
+button a {
+    color: #fdcc04;
+}
+
+button:hover {
+    background: white;
     color: black;
 }
 
+@media only screen and (min-width: 1000px) {
+    .wrapper {
+        width: 1000px;
+        margin: 0 auto;
+    }
+    .index-banner {
+        height: 450px;
+    
+    }
+    .index-links {
+        overflow: hidden;
+    }
+
+    .index-links div {
+        margin: 10px 10px 50px 10px;
+        height: 100px;
+        background-color: #111;
+        float: left;
+    }
+    .index-boxlink-1 { 
+        width: calc(25% - 46px)!important;
+    }
+    .index-boxlink-2 {
+        width: calc(50% - 60px) !important;
+    }
+    .index-links div h3 {
+        font-size: 1.5rem !important;
+        
+    }
+    footer {
+        clear: both;
+        margin-top: 50px ;
+    }
+}
+
+/*index boxes*/
+
+.index-links div {
+    margin: 16px 16px 0;
+    width: calc(100% - 40px);
+    height: 100px;
+    background-color: #111;
+}
+
+.index-links div h3 {
+    color: #fdcc04;
+    text-align: center;
+    line-height: 100px;
+    font-size: 1.5rem;
+    
+}
+
+/*footer*/
 
 footer {
+    width: calc(100%-80px);
+    padding: 40px 40px;
+    margin-top: 20px;
+    background-color: #111;
+    overflow: hidden;
+}
+
+footer ul {
+    width: fit-content;
+    float: left;
+    padding-left: 20px;
+
+}
+
+footer ul li {
+    display: block;
+}
+
+footer ul li a{
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+    
+}
+    
+/*About me*/
+
+.about-banner {
+    width: 100%;
+    height: calc(100vh-100px);
+    display: table;
+
+}
+
+.about-center {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.about-banner h1 {
+    margin-top: 70px;
+    font-weight: bolder;
+    font-size: 3rem;
+    text-align: left;
+    padding: 5px 40px;
+}
+
+.about-banner p {
+    margin-top: 40px;
+    text-align: left;
+    font-size: 1.5rem;
+    padding: 5px 40px;
+}
+
+.about-banner button {
+    width: auto;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    border: none;
+    color: #fdcc04;
     background: black;
-    color: white;
-    padding: 25px;
-    align-items: column;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 15px;
+    margin: 25px 20px;
 }
 
-footer p a {
-    color: white;
+/*experience*/
+
+.experiences-banner {
+    width: 100%;
+    height: calc(100vh-100px);
+    display: table;
+
 }
 
-/*Projects*/
+.experiences-center {
+    display: table-cell;
+    vertical-align: middle;
+}
 
-.projects {
-    background: #fdcc04;
+.experiences-banner h1 {
+    margin-top: 70px;
+    font-weight: bolder;
+    font-size: 3rem;
+    text-align: left;
+    padding: 5px 40px;
+}
+
+.experiences-banner h2 {
+    text-align: left;
+    padding: 0 40px;
+}
+
+.experiences-banner p {
+    margin-top: 40px;
+    text-align: left;
+    font-size: 1.5rem;
+    padding: 5px 40px;
+}
+
+
+/*resume*/
+.resume {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: auto;
+    height: fit-content;
     padding: 3rem calc((100vw-1300px)/2);
     display: flex;
     flex-direction: column;
@@ -338,23 +296,60 @@ footer p a {
     color: black;
     padding: 0rem 2rem ;
     flex: 1;
+
+}
+.resume h1 {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 3rem;
+    font-style: bolder;
+}
+
+.resume-center {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/*contact*/
+
+.index-links div img {
+    color: #fdcc04;
+    align-items: center;
+    justify-content: center;
+    margin: 5px calc(50% - 45px) 0px ;
+}
+
+.index-links h1 {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bolder;
+}
+
+/*projects*/
+
+.projects {
+    width: 100%;
+    height: calc(100vh-100px);
+    display: table;
+
 }
 
 .projects h1{
     margin-bottom: 1rem;
     font-size: 1.5rem;
     margin-left: 20px;
+    text-align: center;
 }
 
 .projects p{
     margin-bottom: 2rem;
     font-size: 0.9rem;
     line-height: 1.5;
+    text-align: center;
 }
 
 .projects button a {
-    width: auto;
-    padding: 1rem 3rem;
     font-size: 1rem;
     border: none;
     color: #fdcc04;
@@ -364,85 +359,25 @@ footer p a {
 }
 
 .projects button {
-    width: auto;
-    padding: 1rem 3rem;
+    padding: 2rem 5rem;
     font-size: 1rem;
     border: none;
     color: #fdcc04;
     background: black;
     cursor: pointer;
-}
-
-.projects button:hover {
-    background: white;
-    color: black;
+    margin: 0 40%;
 }
 
 .projects img {
     max-width: 30%;
     height: auto;
+    margin: 0 35%;
 }
 
-.projects header {
+.projects h2{
     margin-bottom: 1rem;
-    font-size: 3rem;
+    font-size: 5rem;
     margin-left: 20px;
     font-style: bold;
-}
-
-
-/* Experience */
-
-.experiences {
-    background: #fdcc04;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 85vh;
-    padding: 3rem calc((100vw-1300px)/2);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    color: black;
-    padding: 0rem 2rem ;
-    flex: 1;
-}
-.experience-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.experiences h2,h3 {
-    padding-left: 20px;
-    padding-bottom: 15px;
-
-}
-.experiences img {
-    float: right;
-    margin-left: 1rem;
-}
-
-.experience-content {
-    display: flex;
-    align-items: flex-start;
-    gap: 1px; 
-}
-.text {
-    flex: auto;
-}
-
-.exppic img {
-    max-width: 100%; 
-    height: auto; 
-}
-
-
-.bio button a{
-    width: auto;
-    padding: 1rem 3rem;
-    font-size: 1rem;
-    border: none;
-    color: #fdcc04;
-    background: black;
-    cursor: pointer;
+    text-align: center;
 }
