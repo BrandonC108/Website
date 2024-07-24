@@ -7,73 +7,87 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <div class="logo">BC</div>
-        <div class="nav-items">
-            <a href="index.html">Home</a>
-            <a href="AboutMe.html">About Me</a>
-            <a href="Contact.html">Contact</a>
-            
+    <header>
+        <div class="logo">
+           <a href="index.html" class="header-brand">BC</a> 
+           <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+           </nav>
         </div>
-    </nav>
-    <section>
-        <div class="bio">
-            <h1>More about me</h1> 
-            <p>
-                I am Brandon Choi from Richmond Hill, Ontario. 
-                I am passionate about becoming an engineer to eventually design a car. 
-                I am interested in motor racing, particularly Formula 1, 
-                and hope to work for a team in the future. 
-                I have skills in design projects, woodworking, 
-                CAD designing, CNC machining, and 3D printing, 
-                which complements my engineering pursuits. 
-                I also have experience as a mechanic apprentice at Lexus. 
-                Currently, I am an incoming student at the University of Waterloo, where 
-                I will be studying mechanical engineering.
-            </p>
-            <button>
-                <a href="experiences.html">Experiences</a>
-            </button>
-        </div>
-        <div class="resume">
-            <h1>Resume</h1>
-            <iframe class="pdf" 
-                src=
-            "Brandon Resume (1).pdf"
-            width="1080" height="2156">
-        </iframe>
+    </header>
+    <main>
+        <section class="about-banner">
+            <div class="about-center">
+                <h1>More about me</h1>
+                <p> I am Brandon Choi from Richmond Hill, Ontario. 
+                    I am passionate about becoming an engineer to one day create my own car. 
+                    I am interested in motor racing, particularly Formula 1, 
+                    and hope to work for a team in the future. 
+                    I have skills in design projects, woodworking, 
+                    CAD designing, CNC machining, and 3D printing, 
+                    which complement my engineering pursuits. 
+                    I also have experience as a mechanic apprentice at Lexus. 
+                    Currently, I am an incoming student at the University of Waterloo, where 
+                    I will be studying mechanical engineering.
+                </p>
+            </div>
+        </section>
+        <section class="experiences-banner">
+            <div class="experiences-center">
+                <h1>Experiences</h1>
+                <h2>Lexus <br>
+                    <br>
+                Apprentice Mechanic</h2>
+                <p>
+                    I got the opportunity to work at a Lexus dealership as an apprentice mechanic in their service shop. 
+                    During my 5 months at Lexus, I had the chance to familiarize myself with many pneumatic and power tools. 
+                    I also had the opportunity to learn a bit about accessibility in design. Many of the parts in a vehicle are placed in quite difficult areas to access, 
+                    and this has been able to open my eye in some of the flaws in designing a car. 
+                    I aim to take my knowledge and design a car that is easier to repair than the current designs.
+                </p>
 
-        </div>
-    </section>
-    <div class="table">
-        <table>
-            <tr>
-                <th>Projects</th>
-                <th>Codes</th>
-            </tr>
-            <tr>
-                <td>
-                    <button>
-                        <a href="Projects.html">Past Projects</a>
-                    </button>
-                </td>
-                <td>
-                    <button>
-                        <a href="https://github.com/BrandonC108">GitHub</a>
-                    </button>
-                </td>
-            </tr>
-            
-        </table>
-    </div>
-    <footer>
-        <p>
-            
-            <a href="https://mail.google.com/mail/u/0/#inbox?compose=new">brandon.mathieu.choi@gmail.com</a>
-        </p>
+            </div>
+            <div class="experience-pic">
+                <img src="IMG-5071.jpg" width="80%" alt="Lexus apprentice mechanic experience">
+            </div>
+        </section>
+        <section class="resume">
+            <div class="resume-center">
+                <h1>Resume</h1>
+                <iframe class="pdf" 
+                    src=
+                "Brandon Resume (1).pdf"
+                width="1080" height="1150">
+                </iframe>
+            </div>
+        </section>
+        <section class="suggested">
+            <div class="wrapper">
+                <section class="index-links">
+                    <a href="projects.html"><div class="index-boxlink-2">
+                        <h3>Projects</h3>
+                    </div></a>
+                    <a href="https://github.com/BrandonC108"><div class="index-boxlink-2">
+                        <h3>GitHub</h3>
+                    </div></a>
+                </section>
+            </div>
+        </section>
+    </main>
+    <footer class="footer-links">
+        <section>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </section>
     </footer>
 </body>
-
-
-
 </html>
