@@ -40,7 +40,7 @@ header nav ul {
 header nav ul li{
     display: inline-block;
     list-style: none;
-    padding: 0 20px;
+    padding: 0 16px;
    
 }
 
@@ -210,7 +210,7 @@ footer ul li a{
 
 .about-banner {
     width: 100%;
-    height: calc(100vh-100px);
+    height: calc(100vh- 100px);
     display: table;
 
 }
@@ -252,12 +252,17 @@ footer ul li a{
 
 .experiences-banner {
     width: 100%;
-    height: calc(100vh-100px);
+    height: calc(100vh- 100px);
     display: table;
 
 }
 
 .experiences-center {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.experiences-pic {
     display: table-cell;
     vertical-align: middle;
 }
@@ -281,7 +286,25 @@ footer ul li a{
     font-size: 1.5rem;
     padding: 5px 40px;
 }
+.img-me {
+    width: 100%;
 
+}
+@media only screen and (max-width:1000px){
+    .experiences-pic {
+        display: block; 
+        width: 100%;
+    }
+
+    .experiences-pic img {
+        float: none; 
+        width: 100%;
+    }
+
+    .img-me {
+        width: 90%;
+    }
+}
 
 /*resume*/
 .resume {
@@ -298,6 +321,17 @@ footer ul li a{
     flex: 1;
 
 }
+.resume-cell {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.resume iframe {
+    border: none;
+    width: 80vw; 
+
+}
 .resume h1 {
     margin-top: 100px;
     margin-bottom: 20px;
@@ -309,7 +343,16 @@ footer ul li a{
 .resume-center {
     display: table-cell;
     vertical-align: middle;
+    
 }
+
+@media only screen and (min-width: 1000px) {
+    .resume iframe {
+        width: 860px !important;
+        height: 1000px !important;
+    }
+}
+
 
 /*contact*/
 
@@ -330,19 +373,24 @@ footer ul li a{
 
 .projects {
     width: 100%;
-    height: calc(100vh-100px);
+    height: calc(100vh - 100px);
     display: table;
-
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
-.projects h1{
+.projects-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.projects h1 {
     margin-bottom: 1rem;
     font-size: 1.5rem;
     margin-left: 20px;
     text-align: center;
 }
 
-.projects p{
+.projects p {
     margin-bottom: 2rem;
     font-size: 0.9rem;
     line-height: 1.5;
@@ -355,29 +403,61 @@ footer ul li a{
     color: #fdcc04;
     cursor: pointer;
     text-decoration: none;
-    
 }
 
 .projects button {
-    padding: 2rem 5rem;
+    padding: 1rem 2rem;
     font-size: 1rem;
     border: none;
     color: #fdcc04;
     background: black;
     cursor: pointer;
-    margin: 0 40%;
+    display: block;
+    margin: 1rem auto; /* Center the button */
 }
 
 .projects img {
-    max-width: 30%;
+    max-width: 100%;
     height: auto;
-    margin: 0 35%;
+    display: block;
+    margin: 1rem auto; /* Center the image */
 }
 
-.projects h2{
+.projects h2 {
     margin-bottom: 1rem;
-    font-size: 5rem;
+    font-size: 2.5rem;
     margin-left: 20px;
-    font-style: bold;
+    font-weight: bold;
     text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+    .projects {
+        display: block; /* Change to block layout */
+        height: auto;
+    }
+
+    .projects-cell {
+        display: block;
+        width: 100%;
+    }
+
+    .projects h1, .projects h2 {
+        font-size: 1.2rem; /* Adjust font size */
+        margin-left: 10px; /* Adjust margins */
+    }
+
+    .projects p {
+        font-size: 0.8rem; /* Adjust font size */
+    }
+
+    .projects button {
+        padding: 1rem 2rem; /* Adjust padding */
+        margin: 1rem auto; /* Center the button */
+    }
+
+    .projects img {
+        max-width: 80%; /* Ensure image fits within the viewport */
+        margin: 1rem auto; /* Center the image */
+    }
 }
